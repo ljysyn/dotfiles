@@ -1,0 +1,86 @@
+! vim: fdm=marker
+! x config
+
+!! 设置 Xftp.dpi(字体分辨率） {{{
+Xft.rgba: rgb
+Xft.hinting: true
+Xft.antialias: true
+Xcursor.theme: DMZ-White
+Xft.hintstyle: hintslight
+!Xft.dpi: 96
+! }}}
+
+! use ^? for backspace (xterm and friends) {{{
+!   http://www.ibb.net/~anne/keyboard.html
+*VT100.Translations: #override \
+              <Key>BackSpace: string(0x7F)\n\
+              <Key>Delete:    string("\033[3~")\n\
+              <Key>Home:      string("\033[1~")\n\
+              <Key>End:       string("\033[4~")
+*ttyModes: erase ^?
+! }}}
+
+! xterm config {{{
+
+! general settings
+xterm*termName: xterm-256color
+xterm*geometry: 80x24
+xterm*saveLines: 1024
+xterm*scrollBar: false
+xterm*loginshell: false
+xterm*background: black
+xterm*foreground: gray
+xterm*cursorBlink: false
+xterm*bellIsUrgent: true
+
+! fonts and encoding
+xterm*utf8: true
+xterm*locale: true
+xterm*utf8Title: true
+xterm*renderFont: true
+xterm*preeditType: Root
+xterm*xftAntialias: true
+xterm*faceName: DejaVu Sans Mono for Powerline:antialias=True:size=12
+xterm*faceNameDoublesize: WenQuanYi Zen Hei Mono:antialias=True:size=12
+
+! trim trailing spaces
+xterm*trimSelection: true
+
+! fix alt-key inputting
+xterm*eightBitInput: false
+xterm*metaSendsEscape: true
+
+! key bindings
+! change font size dynamically
+! copy and paste with clipboard
+xterm*translations: #override \
+	Ctrl Alt <KeyPress> 0: set-vt-font(d) \n\
+	Ctrl Alt <KeyPress> +: larger-vt-font() \n\
+	Ctrl Alt <KeyPress> -: smaller-vt-font() \n\
+	Mod1 <KeyPress> V: insert-selection(CLIPBOARD,PRIMARY,CUT_BUFFER1) \n\
+	~Shift ~Ctrl<Btn2Up>: insert-selection(CLIPBOARD,PRIMARY,CUT_BUFFER1) \n\
+	~Shift <BtnUp>: select-end(CLIPBOARD,PRIMARY,CUT_BUFFER1) \n\
+	Ctrl Shift <KeyPress> C: copy-selection(CLIPBOARD) \n\
+	Ctrl Shift <KeyPress> V: insert-selection(CLIPBOARD)
+
+! allow selecting email/url by double-click
+xterm*charClass: 33:48,37-38:48,45-47:48,64:48,58:48,126:48,61:48,63:48,43:48,35:48
+
+! tango color scheme
+xterm*color0: #1e1e1e
+xterm*color1: #cc0000
+xterm*color2: #4e9a06
+xterm*color3: #c4a000
+xterm*color4: #3465a4
+xterm*color5: #75507b
+xterm*color6: #0b939b
+xterm*color7: #d3d7cf
+xterm*color8: #555753
+xterm*color9: #ef2929
+xterm*color10: #8ae234
+xterm*color11: #fce94f
+xterm*color12: #729fcf
+xterm*color13: #ad7fa8
+xterm*color14: #00f5e9
+xterm*color15: #eeeeec
+! }}}
