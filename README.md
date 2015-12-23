@@ -40,6 +40,9 @@ ln -s dotfiles/.Xresource .Xresource
 ln -s dotfiles/.Xmodmap .Xmodmap
 ln -s dotfiles/.lscolor .lscolor
 ln -s dotfiles/.lscolor256 .lscolor256
+mkdir -p .vim/ftplugin
+ln -s dotfiles/c.vim .vim/ftplugin/c.vim
+ln -s dotfiles/python.vim .vim/ftplugin/python.vim
 ```
 
 You need to install fasd:
@@ -49,6 +52,14 @@ cd ~
 git clone https://www.github.com/clvv/fasd.git
 cd fasd
 maks install
+```
+
+The Vundle should be installed as VIM plugin manager:
+
+```sh
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+vim
+:BundleInstall
 ```
 
 ## License
