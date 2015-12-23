@@ -30,7 +30,7 @@ You should do this:
 cd ~
 mkdir dotfiles
 cd dotfiles
-git clone https://www.github.com/ljysyn/dotfiles.git
+git clone https://github.com/ljysyn/dotfiles.git
 cd ~
 ln -s dotfiles/.zshrc .zshrc
 ln -s dotfiles/.tmux.conf .tmux.conf
@@ -49,7 +49,7 @@ You need to install fasd:
 
 ```sh
 cd ~
-git clone https://www.github.com/clvv/fasd.git
+git clone https://github.com/clvv/fasd.git
 cd fasd
 maks install
 ```
