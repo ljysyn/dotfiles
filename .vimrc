@@ -110,6 +110,12 @@ let g:vim_markdown_folding_disabled = 1
 set cscopeprg='/usr/bin/gtags-cscope'
 " use ctr-] to jump
 set cst
+" auto add tags file
+if filereadable("GTAGS")
+	cs add GTAGS
+elseif $CSCOPE_DB != ''
+	cs add $CSCOPE_DB
+endif
 " keymap
 set cscopequickfix=c-,d-,e-,f-,g0,i-,s-,t-
 nmap <C-f>g :cs find g <C-R>=expand("<cword>")<CR><CR>
