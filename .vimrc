@@ -82,6 +82,7 @@ filetype plugin indent on
 
 " key map
 let mapleader = ','
+inoremap jj <ESC>
 
 " for nerdteee
 map <F3> : NERDTreeToggle<CR>
