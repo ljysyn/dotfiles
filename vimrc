@@ -4,6 +4,8 @@ set nu
 set nobackup
 set cc=80
 set fileencoding=utf-8
+set encoding=utf-8
+set guifont="DejaVu\ Sans\ Mono\ for\ Powerline"
 
 " for vundle
 set nocompatible
@@ -24,7 +26,9 @@ Bundle 'Valloric/YouCompleteMe'
 Bundle 'jiangmiao/auto-pairs'
 Bundle 'godlygeek/tabular'
 Bundle 'plasticboy/vim-markdown'
-Bundle 'Lokaltog/vim-powerline'
+Bundle 'vim-airline/vim-airline'
+Bundle 'vim-airline/vim-airline-themes'
+Bundle 'wincent/command-t'
 
 filetype plugin indent on
 
@@ -33,12 +37,12 @@ let mapleader = ','
 inoremap jj <ESC>
 """ }
 
-""" for powerline {
+""" for airline {
 set laststatus=2
-let g:Powerline_symbols = 'fancy'
-"set guifont='DejaVu\ Sans\ Mono\ for\ Powerline'
-set t_Co=256
-let g:Powerline_symbols = 'fancy'
+"let g:airline_theme="badwolf"
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#whitespace#enabled = 0
+let g:airline#extensions#whitespace#symbol = '!'
 """ }
 
 """ for nerdteee {
