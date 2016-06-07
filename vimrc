@@ -49,6 +49,10 @@ let g:airline#extensions#whitespace#symbol = '!'
 map <F3> : NERDTreeToggle<CR>
 """ }
 
+""" for command-t {
+map <F4> : CommandT<CR>
+"""}
+
 """ for YouCompleteMe {
 let g:ycm_confirm_extra_conf = 0
 " disable diagnostrics show, such as ycm_err_symbol,
@@ -59,7 +63,7 @@ let g:ycm_warning_symbol = '>*'
 nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
 " nnoremap <leader>jd :YcmCompleter GoToDefinition<CR>
 " nnoremap <leader>jc :YcmCompleter GoToDeclaration<CR>
-nmap <F4> :YcmDiags<CR>
+nmap <F5> :YcmDiags<CR>
 """ }
 
 """ for auto-pairs {
