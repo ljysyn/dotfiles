@@ -9,9 +9,8 @@ ln -s dotfiles/Xmodmap .Xmodmap
 ln -s dotfiles/lscolor .lscolor
 ln -s dotfiles/lscolor256 .lscolor256
 mkdir -p .vim/ftplugin
-cd .vim/ftplugin
-ln -s ../../dotfiles/c.vim c.vim
-ln -s ../../dotfiles/python.vim python.vim
+ln -s dotfiles/c.vim .vim/ftplugin/c.vim
+ln -s dotfiles/python.vim .vim/ftplugin/python.vim
 
 cd ~
 
