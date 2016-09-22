@@ -26,38 +26,28 @@ You need to use XTERM as your terminal tools.
 
 You should do this:
 
-```sh
-cd ~
-mkdir dotfiles
-cd dotfiles
-git clone https://github.com/ljysyn/dotfiles.git
-cd ~
-ln -s dotfiles/.zshrc .zshrc
-ln -s dotfiles/.tmux.conf .tmux.conf
-ln -s dotfiles/.vimrc .vimrc
-ln -s dotfiles/.fonts .fonts
-ln -s dotfiles/.Xresource .Xresource
-ln -s dotfiles/.Xmodmap .Xmodmap
-ln -s dotfiles/.lscolor .lscolor
-ln -s dotfiles/.lscolor256 .lscolor256
-mkdir -p .vim/ftplugin
-cd .vim/ftplugin
-ln -s ../../dotfiles/c.vim c.vim
-ln -s ../../dotfiles/python.vim python.vim
+```shell
+git clone https://github.com/ljysyn/dotfiles.git ~/dotfiles
+```
+
+You need to install oh-my-zsh:
+
+```shell
+git clone https://github.com/robbyrussell/oh-my-zsh.git ~/oh-my-zsh
+cp ~/dotfiles/piupiupiu.zsh-theme ~/oh-my-zsh/themes/
+cp ~/dotfiles/piupiupiu.zsh ~/oh-my-zsh/custom/
 ```
 
 You need to install fasd:
 
-```sh
-cd ~
-git clone https://github.com/clvv/fasd.git
-cd fasd
-maks install
+```shell
+git clone https://github.com/clvv/fasd.git ~/fasd
+cd ~/fasd && make install
 ```
 
 The Vundle should be installed as VIM plugin manager:
 
-```sh
+```shell
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim
 :BundleInstall
