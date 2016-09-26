@@ -12,10 +12,8 @@ mkdir -p .vim/ftplugin
 ln -s dotfiles/c.vim .vim/ftplugin/c.vim
 ln -s dotfiles/python.vim .vim/ftplugin/python.vim
 
-cd ~
-
 # powerline fonts
-git clone https://github.com/powerline/fonts.git
+git clone https://github.com/powerline/fonts.git dotfiles/fonts/powerline/
 
 # oh-my-zsh
 git clone https://github.com/robbyrussell/oh-my-zsh.git ~/oh-my-zsh
