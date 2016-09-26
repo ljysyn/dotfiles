@@ -14,6 +14,9 @@ ln -s dotfiles/python.vim .vim/ftplugin/python.vim
 
 cd ~
 
+# powerline fonts
+git clone https://github.com/powerline/fonts.git
+
 # oh-my-zsh
 git clone https://github.com/robbyrussell/oh-my-zsh.git ~/oh-my-zsh
 cp ~/dotfiles/piupiupiu.zsh-theme ~/oh-my-zsh/themes/
