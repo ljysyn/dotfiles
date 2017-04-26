@@ -40,8 +40,8 @@ xterm*utf8Title: true
 xterm*renderFont: true
 xterm*preeditType: Root
 xterm*xftAntialias: true
-xterm*faceName: DejaVu Sans Mono for Powerline:antialias=True:size=12
-xterm*faceNameDoublesize: WenQuanYi Zen Hei Mono:antialias=True:size=12
+xterm*faceName: DejaVu Sans Mono for Powerline:antialias=True:size=11
+xterm*faceNameDoublesize: WenQuanYi Zen Hei Mono:antialias=True:size=11
 
 ! trim trailing spaces
 xterm*trimSelection: true

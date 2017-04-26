@@ -22,6 +22,7 @@ Bundle 'gmarik/vundle'
 
 " plugin from github
 Bundle 'scrooloose/nerdtree'
+Bundle 'sirver/ultisnips'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'jiangmiao/auto-pairs'
 Bundle 'godlygeek/tabular'
