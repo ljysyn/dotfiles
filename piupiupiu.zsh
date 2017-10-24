@@ -14,6 +14,17 @@ alias sw64="sudo mount --bind /home/liu/work/64bits/code /home/liu/work/64bits/c
 
 alias com="sudo minicom -R utf-8"
 
+
+alias a='fasd -a'        # any
+alias s='fasd -si'       # show / search / select
+alias d='fasd -d'        # directory
+alias f='fasd -f'        # file
+alias sd='fasd -sid'     # interactive directory selection
+alias sf='fasd -sif'     # interactive file selection
+alias z='fasd_cd -d'     # cd, same functionality as j in autojump
+alias zz='fasd_cd -d -i' # cd with interactive selectionlias zz='fasd_cd -d -i' # cd with interactive selection
+alias v='f -e vim' # quick opening files with vim
+
 # {{{ double ESC to prepend "sudo"
 sudo-command-line() {
     [[ -z $BUFFER ]] && zle up-history
@@ -67,3 +78,4 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 export EDITOR='vim'
+eval "$(fasd --init auto)"
