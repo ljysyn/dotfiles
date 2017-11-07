@@ -1,4 +1,13 @@
 
+# How to build work station
+
+sudo apt-get install zsh
+sudo apt-get install tmux
+sudo apt-get install vim-nox
+sudo apt-get install cmake
+sudo apt-get install git
+sudo apt-get install subversion
+
 cd ~
 ln -s dotfiles/zshrc .zshrc
 ln -s dotfiles/tmux.conf .tmux.conf
@@ -22,7 +31,8 @@ ln -s ~/dotfiles/piupiupiu.zsh dotfiles/oh-my-zsh/custom/piupiupiu.zsh
 
 # fasd
 git clone https://github.com/clvv/fasd.git dotfiles/fasd
-cd dotfiles/fasd && make install && cd 
+cd dotfiles/fasd && sudo make install && cd 
 
 # vundle for vim
 git clone https://github.com/VundleVim/Vundle.vim.git .vim/bundle/Vundle.vim
+vim +PluginInstall +qall

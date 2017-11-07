@@ -19,25 +19,29 @@ set hls
 set nocompatible
 filetype off
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim/
+call vundle#begin()
 
 " let Vundle manage Vundle 
 " required!
-Bundle 'gmarik/vundle'
+Bundle 'VundleVim/Vundle.vim'
 
 " plugin from vim-script
 
 " plugin from github
-Bundle 'scrooloose/nerdtree'
-Bundle 'sirver/ultisnips'
-Bundle 'Valloric/YouCompleteMe'
-Bundle 'jiangmiao/auto-pairs'
-Bundle 'godlygeek/tabular'
-Bundle 'plasticboy/vim-markdown'
-Bundle 'vim-airline/vim-airline'
-Bundle 'vim-airline/vim-airline-themes'
-Bundle 'wincent/command-t'
+Plugin 'scrooloose/nerdtree'
+Plugin 'sirver/ultisnips'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'jiangmiao/auto-pairs'
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'wincent/command-t'
+
+" All vundle plugin must upon this
+call vundle#end()
+" vundle end
 
 filetype plugin indent on
 
