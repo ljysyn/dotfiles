@@ -7,6 +7,7 @@ sudo apt-get install vim-nox
 sudo apt-get install cmake
 sudo apt-get install git
 sudo apt-get install subversion
+sudo apt-get install python-dev
 
 cd ~
 ln -s dotfiles/zshrc .zshrc
@@ -36,3 +37,6 @@ cd dotfiles/fasd && sudo make install && cd
 # vundle for vim
 git clone https://github.com/VundleVim/Vundle.vim.git .vim/bundle/Vundle.vim
 vim +PluginInstall +qall
+
+# YouCompleteMe install
+cd .vim/bundle/YouCompleteMe/ && ./install --clang-completer && cd
