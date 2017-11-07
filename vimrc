@@ -41,9 +41,8 @@ Plugin 'wincent/command-t'
 
 " All vundle plugin must upon this
 call vundle#end()
-" vundle end
-
 filetype plugin indent on
+" vundle end
 
 """ key map {
 let mapleader = ','
