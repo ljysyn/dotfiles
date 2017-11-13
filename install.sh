@@ -45,3 +45,6 @@ vim +PluginInstall +qall
 
 # YouCompleteMe install
 cd ~/.vim/bundle/YouCompleteMe/ && ./install --clang-completer && cd ~
+
+# command-t install
+cd ~/.vim/bundle/command-t/ruby/command-t/ext/command-t && ruby extconf.rb && make && cd ~
