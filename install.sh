@@ -30,6 +30,12 @@ git clone https://github.com/powerline/fonts.git ~/fonts/powerline/
 ~/fonts/powerline/install.sh
 rm -rf fonts
 
+# wqy fonts for chinese
+font_dir="$HOME/.local/share/fonts"
+cp ~/dotfiles/fonts/wqy/wqy-zenhei.ttc $font_dir 
+cp ~/dotfiles/fonts/wqy/wqy-microhei.ttc $font_dir
+fc-cache -f $font_dir
+
 # oh-my-zsh
 git clone https://github.com/robbyrussell/oh-my-zsh.git ~/oh-my-zsh
 ln -s ~/dotfiles/piupiupiu.zsh-theme ~/oh-my-zsh/themes/piupiupiu.zsh-theme
