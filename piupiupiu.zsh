@@ -12,7 +12,7 @@
 alias sw32="sudo mount --bind /home/liu/work/32bits/code /home/liu/work/32bits/compile/home/liu/code; sudo chroot /home/liu/work/32bits/compile /bin/bash -c \"su - liu\""
 alias sw64="sudo mount --bind /home/liu/work/64bits/code /home/liu/work/64bits/compile/home/liu/code; sudo chroot /home/liu/work/64bits/compile /bin/bash -c \"su - liu\""
 
-alias com="sudo minicom -R utf-8"
+alias com="sudo minicom -R utf-8 -w"
 
 
 alias a='fasd -a'        # any
