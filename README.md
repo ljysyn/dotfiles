@@ -1,59 +1,33 @@
-# dotfile
+# How to build a Linux workstation for C/Python coder.
 
 ***
 
-Dotfiles for some tools on ubuntu desktop:
+This is a configuration based on Ubuntu 16.04. In order to mark all the tools we used,   
+and simplify re-build work when updating Ubuntu to lastest verion or migrating to new computer.
 
-zsh
+Tools will be installed and configured are:
 
-tmux
-
-xterm
-
-fonts
-
-xmodmap
-
-fasd
-
-vim
+* zsh
+* tmux
+* xterm
+* fasd
+* vim
+* cmake
+* git
+* subversion
 
 ## Installation
 
-Make sure you have installed zsh, tmux, vim.
+1. You should clone the source code to your home root dir.
 
-You need to use XTERM as your terminal tools.
+            git clone https://github.com/ljysyn/dotfiles.git ~/dotfiles
 
-You should do this:
+2. Run install.sh
 
-```shell
-git clone https://github.com/ljysyn/dotfiles.git ~/dotfiles
-```
+            cd ~/dotfiles
+            ./install.sh
 
-You need to install oh-my-zsh:
-
-```shell
-git clone https://github.com/robbyrussell/oh-my-zsh.git ~/oh-my-zsh
-cp ~/dotfiles/piupiupiu.zsh-theme ~/oh-my-zsh/themes/
-cp ~/dotfiles/piupiupiu.zsh ~/oh-my-zsh/custom/
-```
-
-You need to install fasd:
-
-```shell
-git clone https://github.com/clvv/fasd.git ~/fasd
-cd ~/fasd && make install
-```
-
-The Vundle should be installed as VIM plugin manager:
-
-```shell
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-vim
-:BundleInstall
-```
 
 ## License
 
 The GPL License
-
