@@ -98,6 +98,7 @@ if filereadable("GTAGS")
 elseif $CSCOPE_DB != ''
 	cs add $CSCOPE_DB
 endif
+let g:CommandTMaxFiles=1000000
 " keymap
 set cscopequickfix=c-,d-,e-,f-,g0,i-,s-,t-
 nmap <C-f>g :cs find g <C-R>=expand("<cword>")<CR><CR>
