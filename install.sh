@@ -8,6 +8,8 @@ sudo apt-get install cmake
 sudo apt-get install git
 sudo apt-get install subversion
 sudo apt-get install python-dev
+sudo apt-get install ruby
+sudo apt-get install ruby-dev
 
 cd ~
 
