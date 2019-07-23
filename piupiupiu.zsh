@@ -9,8 +9,8 @@
 # cd $brainstormr
 #
 
-alias sw32="sudo mount --bind /home/liu/1-work/32bits/code /home/liu/1-work/32bits/compile/home/liu/code; sudo chroot /home/liu/1-work/32bits/compile /bin/bash -c \"su - liu\""
-alias sw64="sudo mount --bind /home/liu/1-work/64bits/code /home/liu/1-work/64bits/compile/home/liu/code; sudo chroot /home/liu/1-work/64bits/compile /bin/bash -c \"su - liu\""
+alias sw32="mount | grep \"/home/liu/1-work/32bits/compile/home/liu/code\" > /dev/null || sudo mount --bind /home/liu/1-work/32bits/code /home/liu/1-work/32bits/compile/home/liu/code; sudo chroot /home/liu/1-work/32bits/compile /bin/bash -c \"su - liu\""
+alias sw64="mount | grep \"/home/liu/1-work/64bits/compile/home/liu/code\" > /dev/null || sudo mount --bind /home/liu/1-work/64bits/code /home/liu/1-work/64bits/compile/home/liu/code; sudo chroot /home/liu/1-work/64bits/compile /bin/bash -c \"su - liu\""
 
 alias com="sudo minicom -R utf-8 -w"
 
