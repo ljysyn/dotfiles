@@ -31,7 +31,7 @@ Bundle 'VundleVim/Vundle.vim'
 " plugin from github
 Plugin 'scrooloose/nerdtree'
 Plugin 'sirver/ultisnips'
-Plugin 'Valloric/YouCompleteMe'
+Plugin 'ycm-core/YouCompleteMe'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
