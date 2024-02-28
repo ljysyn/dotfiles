@@ -1,15 +1,16 @@
 
 # How to build work station
 
-sudo apt-get install zsh
-sudo apt-get install tmux
-sudo apt-get install vim-nox
-sudo apt-get install cmake
-sudo apt-get install git
-sudo apt-get install subversion
-sudo apt-get install python-dev
-sudo apt-get install ruby
-sudo apt-get install ruby-dev
+sudo apt install -y build-essential
+sudo apt install -y zsh
+sudo apt install -y tmux
+sudo apt install -y vim-nox
+sudo apt install -y cmake
+sudo apt install -y git
+sudo apt install -y subversion
+sudo apt install -y python-dev
+sudo apt install -y ruby
+sudo apt install -y ruby-dev
 
 cd ~
 
@@ -52,7 +53,7 @@ git clone https://github.com/VundleVim/Vundle.vim.git .vim/bundle/Vundle.vim
 vim +PluginInstall +qall
 
 # YouCompleteMe install
-cd ~/.vim/bundle/YouCompleteMe/ && ./install --clang-completer && cd ~
+cd ~/.vim/bundle/YouCompleteMe/ && ./install.py --clang-completer && cd ~
 
 # command-t install
 cd ~/.vim/bundle/command-t/ruby/command-t/ext/command-t && ruby extconf.rb && make && cd ~
