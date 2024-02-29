@@ -11,6 +11,7 @@ sudo apt install -y subversion
 sudo apt install -y python-dev
 sudo apt install -y ruby
 sudo apt install -y ruby-dev
+sudo apt install -y fontconfig
 
 cd ~
 
@@ -21,6 +22,7 @@ ln -s dotfiles/Xresource .Xresource
 ln -s dotfiles/Xmodmap .Xmodmap
 ln -s dotfiles/lscolor .lscolor
 ln -s dotfiles/lscolor256 .lscolor256
+ln -s dotfiles/ycm_extra_conf.py .ycm_extra_conf.py
 
 mkdir -p .vim/ftplugin
 ln -s ~/dotfiles/c.vim .vim/ftplugin/c.vim
